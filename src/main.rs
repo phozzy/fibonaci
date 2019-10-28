@@ -14,7 +14,7 @@ fn get_position() -> u32 {
         };
     }
 }
-fn fibonaci(position: u32, f0: u32, f1: u32) -> u32 {
+fn fibonaci(position: u32, f0: u128, f1: u128) -> u128 {
     if position == 0 {
         f0
     } else if position == 1 {
