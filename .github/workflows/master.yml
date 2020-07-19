@@ -27,6 +27,10 @@ jobs:
       with:
         crate: cargo-release
         version: "0.13.5"
+    - name: Configure git
+      uses: oleksiyrudenko/gha-git-credentials@v1
+      with:
+        token: '${{ secrets.GITHUB_TOKEN }}'
     - name: Make a release
       uses: actions-rs/cargo@v1
       with:
